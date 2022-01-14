@@ -61,7 +61,7 @@ RUN yum install -y \
 #RUN yum install -y nodejs && npm update -g
 
 # install docker client see https://download.docker.com/linux/static/stable/x86_64/
-ARG DOCKERURL=https://download.docker.com/linux/static/stable/x86_64/docker-20.10.6.tgz
+ARG DOCKERURL=https://download.docker.com/linux/static/stable/x86_64/docker-20.10.9.tgz
 RUN curl -fSL "$DOCKERURL" -o docker.tgz \
     && tar -xzvf docker.tgz \
     && mv docker/* /usr/bin/ \
